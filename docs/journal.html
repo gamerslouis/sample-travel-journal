@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Travel Diary - Home</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d09b75", // Warm earthy terracotta
+                        "primary-light": "#e8d3c5",
+                        "background-light": "#fdfbf7", // Warm off-white/cream
+                        "background-dark": "#1c1917", // Warm black
+                        "paper": "#ffffff",
+                        "paper-dark": "#292524",
+                        "text-main": "#574c43", // Warm dark grey/brown
+                        "text-muted": "#9ca3af", // Neutral grey
+                        "text-muted-warm": "#a8a29e", // Warm grey
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 8px 30px -4px rgba(214, 203, 194, 0.25)',
+                        'card': '0 2px 15px -2px rgba(0, 0, 0, 0.03)',
+                        'up': '0 -4px 20px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main font-display h-screen w-full flex flex-col overflow-hidden selection:bg-primary-light">
+    <header
+        class="px-6 pt-12 pb-2 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm sticky top-0 z-20 transition-colors duration-300">
+        <div class="flex items-end justify-between mb-4">
+            <div>
+                <p class="text-[11px] font-medium tracking-[0.15em] text-primary uppercase mb-1">My Journal</p>
+                <h1 class="text-2xl font-bold tracking-tight text-text-main dark:text-white">旅行日記</h1>
+            </div>
+        </div>
+        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2 mask-linear-fade">
+            <button
+                class="px-4 py-1.5 rounded-full bg-text-main text-white text-xs font-medium shadow-sm transition-transform active:scale-95">全部</button>
+            <button
+                class="px-4 py-1.5 rounded-full bg-white dark:bg-paper-dark border border-gray-100 dark:border-gray-700 text-text-muted-warm text-xs font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">景點</button>
+            <button
+                class="px-4 py-1.5 rounded-full bg-white dark:bg-paper-dark border border-gray-100 dark:border-gray-700 text-text-muted-warm text-xs font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">美食</button>
+        </div>
+    </header>
+    <main class="flex-1 overflow-y-auto no-scrollbar px-6 pb-24 space-y-10 pt-4">
+        <p class="text-sm text-text-muted-warm font-light leading-relaxed fade-in" style="animation-delay: 0.1s">
+            記錄在日本獨旅的時光。<br />那些安靜的午後，與偶然遇見的風景。
+        </p>
+        <div class="space-y-8">
+            <div class="group fade-in" style="animation-delay: 0.2s">
+                <div class="flex items-center gap-3 mb-3 pl-1">
+                    <span
+                        class="text-xs font-bold text-text-main dark:text-white font-mono tracking-wide">2023.11.12</span>
+                    <div class="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent dark:from-gray-700"></div>
+                </div>
+                <article
+                    class="relative bg-white dark:bg-paper-dark rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition-all duration-500 border border-gray-50 dark:border-gray-800">
+                    <div class="aspect-[16/10] w-full overflow-hidden bg-gray-100">
+                        <img alt="Kamogawa Delta"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7vfb-3Fc194BWumq-AIpfzF5FxvaH7L5mq01cZEV2GOgkwkMaaMeK7Gar3a3qCPwXgVtTkB3AA7qmEmbLhpDJSkpoubkovck0pmadM9L8smkEp0o65WlScpBYj2kUsUXb1ObZWll92Py3549j9iwoMoLcRc9RY1mNfmS5CrWftOWDWULixoCEFUWuHJiDC_Je-tx4RmkQonoPFF6fft7Pn7WGKrIrys7R4sEScQeu3vX1NjrIwn5fa2L80W63F5oVYE661rqqDLlX" />
+                    </div>
+                    <div class="p-5">
+                        <h2 class="text-lg font-bold text-text-main dark:text-white mb-2 leading-tight">鴨川三角洲的午後</h2>
+                        <p class="text-sm text-text-muted-warm leading-relaxed line-clamp-2 mb-4">
+                            坐在河岸邊看著跳烏龜的人們，陽光灑在水面上波光粼粼。買了一杯咖啡，在這裡發呆了一整個下午，感受著京都特有的慢節奏。
+                        </p>
+                        <div
+                            class="flex justify-between items-center pt-2 border-t border-gray-50 dark:border-gray-800/50">
+                            <span
+                                class="inline-flex items-center gap-1 text-[10px] font-medium text-primary bg-primary-light/20 px-2 py-1 rounded">
+                                <span class="material-symbols-outlined text-[12px]">location_on</span>
+                                左京區
+                            </span>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="group fade-in" style="animation-delay: 0.3s">
+                <div class="flex items-center gap-3 mb-3 pl-1">
+                    <span
+                        class="text-xs font-bold text-text-main dark:text-white font-mono tracking-wide">2023.11.15</span>
+                    <div class="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent dark:from-gray-700"></div>
+                </div>
+                <article
+                    class="relative bg-white dark:bg-paper-dark rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition-all duration-500 border border-gray-50 dark:border-gray-800">
+                    <div class="aspect-[16/10] w-full overflow-hidden bg-gray-100">
+                        <img alt="Coffee Cup"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD75TIOaKmI8T6WutT5M4VxpASO7A8DFCd8Cu4XwdxA2-ngPXY5Q1Z3eaao57C8B5cWJxnMFotqnOzLZYP6Lp9GJ0YRyGuCrWBuIGe5Xjuqjx7-fw6t-A3P1V9zEvWHLlslArUIcSQEyuJxypdBRZXw6aMAoEZcjYw2bkT9F5AB56djkWy_brgruTC6N9qdH1MMFU1RTjxozOeIZwURRn7QmC_O9nAkdO7z0Zo_q-R-1ge7GXXdu8SMOBbAyoMdToJU2f6oD67HYm2i" />
+                    </div>
+                    <div class="p-5">
+                        <h2 class="text-lg font-bold text-text-main dark:text-white mb-2 leading-tight">巷弄裡的昭和喫茶店</h2>
+                        <p class="text-sm text-text-muted-warm leading-relaxed line-clamp-2 mb-4">
+                            無意間走進這家充滿煙草味的老店。點了招牌的厚切吐司和手沖咖啡，店主老爺爺專注的神情讓人印象深刻，彷彿時間在這裡靜止了。
+                        </p>
+                        <div
+                            class="flex justify-between items-center pt-2 border-t border-gray-50 dark:border-gray-800/50">
+                            <span
+                                class="inline-flex items-center gap-1 text-[10px] font-medium text-primary bg-primary-light/20 px-2 py-1 rounded">
+                                <span class="material-symbols-outlined text-[12px]">coffee</span>
+                                神保町
+                            </span>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="group fade-in" style="animation-delay: 0.4s">
+                <div class="flex items-center gap-3 mb-3 pl-1">
+                    <span
+                        class="text-xs font-bold text-text-main dark:text-white font-mono tracking-wide">2023.12.01</span>
+                    <div class="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent dark:from-gray-700"></div>
+                </div>
+                <article
+                    class="relative bg-white dark:bg-paper-dark rounded-2xl overflow-hidden shadow-card hover:shadow-soft transition-all duration-500 border border-gray-50 dark:border-gray-800">
+                    <div class="aspect-[16/10] w-full overflow-hidden bg-gray-100">
+                        <img alt="Temple Roof"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaL8nmYVbqJQhfX0akm7GvAh_aQ_nMDJPjBgAYzL_4BY0ntoTJiup3CKeq-ROMm1cdnPGRv7mkmPtmh19eeNuh5KgfEFxiE4kJTYSAnOxKG_9e2ItxLPBWk_Y6_gi-EvKXhHaeS3Zq4NEmIWIzWGJdR7ECT0B-PcSv7AuZhEFVkO-U4J3pbjH49eLXLjNh6_P5KJW8bfARkHRBcNjD5qzq3DqvW29_E11MdrhW92rl0nQaRByjSBbLI1pmA4x9vYJobKQ3Z6x_G5PD" />
+                    </div>
+                    <div class="p-5">
+                        <h2 class="text-lg font-bold text-text-main dark:text-white mb-2 leading-tight">初冬的清水寺</h2>
+                        <p class="text-sm text-text-muted-warm leading-relaxed line-clamp-2 mb-4">
+                            雖然遊客如織，但在清晨時分來到這裡，依然能感受到一份莊嚴與寧靜。空氣中帶著冷冽的氣息，遠處的山嵐若隱若現。
+                        </p>
+                        <div
+                            class="flex justify-between items-center pt-2 border-t border-gray-50 dark:border-gray-800/50">
+                            <span
+                                class="inline-flex items-center gap-1 text-[10px] font-medium text-primary bg-primary-light/20 px-2 py-1 rounded">
+                                <span class="material-symbols-outlined text-[12px]">temple_buddhist</span>
+                                東山區
+                            </span>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="py-6 flex justify-center opacity-30">
+                <div class="w-1 h-1 rounded-full bg-text-muted-warm mx-1"></div>
+                <div class="w-1 h-1 rounded-full bg-text-muted-warm mx-1"></div>
+                <div class="w-1 h-1 rounded-full bg-text-muted-warm mx-1"></div>
+            </div>
+        </div>
+    </main>
+    <nav
+        class="flex justify-around items-center px-8 pb-8 pt-4 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-gray-100 dark:border-gray-800 z-30 shadow-up">
+        <a class="flex flex-col items-center gap-1 text-primary transition-colors" href="#">
+            <div class="w-12 h-8 rounded-full bg-primary-light/30 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[24px] fill-current">book_2</span>
+            </div>
+            <span class="text-[10px] font-medium">日記</span>
+        </a>
+        <a class="flex flex-col items-center gap-1 text-text-muted-warm hover:text-primary transition-colors" href="#">
+            <span class="material-symbols-outlined text-[24px]">map</span>
+            <span class="text-[10px] font-medium">足跡</span>
+        </a>
+    </nav>
+
+</body>
+
+</html>

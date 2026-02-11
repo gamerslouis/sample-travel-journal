@@ -1,0 +1,37 @@
+# ============================================================
+# 網站設定檔
+# 所有可自訂的設定與景點資料都集中在此檔案中
+# ============================================================
+
+# --- 網站基本設定 ---
+site:
+  title: "2025 Tokyo - Louis' Travel Diary"
+  subtitle: "My Journal"
+  journalTitle: "旅行日記"
+  journalDescription: "記錄 2025 到東京旅行的時光。\n那些安靜的午後，與偶然遇見的風景。"
+  mapTitle: "足跡地圖"
+  ogImage: "/img/1.jpeg"
+  url: "https://travel-tokyo-2025.louisif.me"
+  themeColor: "#d09b75"
+
+# --- 作者 / Footer 設定 ---
+author:
+  name: "Louis Li"
+  github: "https://github.com/gamerslouis/sample-travel-journal"
+  blog: "https://blog.louisif.me/"
+  copyrightStartYear: 2026
+
+# --- 地圖預設視角 ---
+map:
+  center: [139.75, 35.68]
+  zoom: 11
+
+# --- 景點資料 ---
+spots:
+  - date: "2025-12-16"
+    time: "13:43"
+    name: "飛機降落"
+    location: "成田国際空港"
+    icon: "plane-landing"
+    description: "即將到達日本"
+    image: "/img/1.jpeg"

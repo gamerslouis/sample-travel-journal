@@ -1,0 +1,24 @@
+{
+    "name": "2025 Tokyo - Louis' Travel Diary",
+    "short_name": "Tokyo Diary",
+    "description": "A personal travel journal documenting my journey through Tokyo",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#faf9f7",
+    "theme_color": "#d09b75",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
