@@ -145,4 +145,8 @@ spots:
 
 ## 📄 授權
 
-MIT License
+### Articles and Images
+All the files inside `public/` directory are licensed under CC BY 4.0.
+
+### Codes
+Files not mentioned in previous paragraphs are licensed under MIT License.
